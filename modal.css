@@ -69,3 +69,14 @@
     background-color: var(--light-primary);
     color: var(--primary-color);
 }
+
+.overlay {
+    visibility: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.open {
+    visibility: visible;
+    opacity: 1;
+}
