@@ -79,11 +79,11 @@ header > h2 > i {
     padding: 0.3rem;
     border: 2px solid var(--lightest-color);
     border-radius: 10px;
-    width: 5%;
 }
 
 #search-button:focus, #search-button:hover {
     background-color: var(--secondary-color);
+    cursor: pointer;
 
 }
 
@@ -93,4 +93,40 @@ main {
     background-color: var(--background-color);
     flex-grow: 1;
     color: var(--lightest-color)
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    
+}
+
+#movie-list article {
+    display: flex;
+    flex-direction: column;
+}
+
+#movie-list article img {
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    max-height: 90%;
+
+}
+
+.remove-button {
+    background-color: var(--primary-color);
+    padding: 0.3rem 0;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--lightest-color);
+    border: none;
+}
+
+.remove-button:focus, .remove-button:hover {
+    background-color: var(--light-primary);
+    color: var(--lightest-color);
 }
