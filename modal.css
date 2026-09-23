@@ -50,6 +50,7 @@
     flex-direction: column;
     justify-content: space-around;
     max-width: 300px;
+    padding-left: 2rem;
 }
 
 #movie-poster {
@@ -57,17 +58,18 @@
 }
 
 #add-to-list {
-    border: 3px solid var(--primary-color);
+    border: none;
     padding: 0.3rem 0;
     width: 100%;
     border-radius: 10px;
     font-weight: bold;
-    box-shadow: 1px 1px 7px #000000;
+    background-color: var(--lightest-color);
+    color: var(--primary-color)
 }
 
 #add-to-list:focus, #add-to-list:hover {
-    background-color: var(--light-primary);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--lightest-color) ;
 }
 
 .overlay {

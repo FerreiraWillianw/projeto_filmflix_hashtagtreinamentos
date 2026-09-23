@@ -15,6 +15,7 @@ function addCurrentMovieToList() {
     }
     addToList(currentMovie);
     updateUI(currentMovie);
+    updateLocalStorage();
     closeModal();
 }
 
@@ -40,7 +41,9 @@ function createModal(data) {
                 </div>
             </section>
             <section id="modal-footer">
-                <button id="add-to-list" onclick="addCurrentMovieToList()">Adicionar à Lista</button>
+                <button id="add-to-list" onclick="addCurrentMovieToList()">
+                  <i class="bi bi-plus"></i>  Adicionar à Lista
+                </button>
             </section>
     `
 }
